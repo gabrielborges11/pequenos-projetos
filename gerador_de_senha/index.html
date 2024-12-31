@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>gerador</title>
+</head>
+<body>
+    <section>
+        <main>
+
+            <div class="painel2">
+            <div class="painel">
+                <h2 id="essasenha">gere uma senha</h2>
+            </div>
+            <button id="copie"  onclick="copiarParaAreaTransferencia()">copiar</button>
+        </div>
+
+            <div>
+                <input type="range" name="tamanhoSenha" id="tamanhoSenha" oninput="atualizarLabel()" min="5" max="20">
+                <label for="tamanhoSenha" id="labelTamanhoSenha"></label>
+            </div>
+
+            <div class="caixas">
+            <div>
+                <input type="checkbox" onclick="box1()" name="" oninput="nivelS()"  id="minusculas">
+                <label for="minusculas">minúsculas</label>
+            </div>
+
+            <div>
+                <input type="checkbox" onclick="box2()" oninput="nivelS()"   id="numeros">
+                <label for="numeros">números</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="" onclick="box3()" oninput="nivelS()"  id="simbolos">
+                <label for="simbolos">símbolos</label>
+            </div>
+        </div>
+
+                <p id="aviso"></p>
+            <button id="btn" onclick="peneira()">gerar</button>
+        </main>
+    </section>
+
+    <script src="./index.js"></script>
+    <script src="./copia.js"></script>
+</body>
+</html>
