@@ -94,6 +94,12 @@ h2{
         grid-template-columns: repeat(2, 1fr);  
     }
 
+    .habilidade:hover{
+
+        box-shadow: none;
+        transform: scale(1.0);
+    }
+
     
 }
 
