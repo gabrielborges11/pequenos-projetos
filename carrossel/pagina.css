@@ -118,3 +118,19 @@ align-items: center;
 #radio4:checked ~ .navegation-auto .auto-btn4{
     background-color:white;
 }
+
+.recado{
+    display:none;
+}
+
+@media(max-width:600px){
+   .slider{
+    display:none;
+   }
+
+   .recado{
+    display:block;
+}
+
+
+}

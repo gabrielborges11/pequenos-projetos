@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -12,7 +13,17 @@
 
     <header>
         <h2>meus projetos</h2>
+        
+        <i class="material-symbols-outlined" onclick="abrirMenu()" id="burger">Menu</i>
+      
     </header>
+
+    <div id="menu">
+      <a href="https://gabrielborges11.github.io/portifolio/projetos.html">
+          <h3>portfólio</h3>
+      </a>
+     
+  </div>
    
 
     <section class="habilidades" id="habilidades">
@@ -68,5 +79,19 @@
     
 
     </section>
+
+    <script>
+function abrirMenu(){
+    
+    if(menu.style.display =="block"){
+   
+       menu.style.display = "none"
+               burger.style.animation='rota2 linear 0.3s'
+    }else{
+       menu.style.display = "block"
+           burger.style.animation='rota linear 0.3s'
+     }
+   }
+    </script>
 </body>
 </html>
