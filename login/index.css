@@ -84,3 +84,19 @@ a{
 p{
     color:white;
 }
+
+.recado{
+    display:none;
+}
+
+@media(max-width:902px){
+    .area-login{
+     display:none;
+    }
+ 
+    .recado{
+     display:block;
+ }
+ 
+ 
+ }
